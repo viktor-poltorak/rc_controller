@@ -2,8 +2,8 @@
 #include <WiFiUdp.h>
 #include <WiFiClient.h>
 
-const char *ssid = "MainHomeNet";
-const char *password = "piramida321";
+const char *ssid = "";
+const char *password = "";
 const unsigned int udpPort = 5555; //local port to listen for UDP packets
 
 struct Controller
