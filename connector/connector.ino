@@ -9,8 +9,14 @@ const char *password = "piramida321";
 const unsigned int udpPort = 5555; //local port to listen for UDP packets
 
 //Servo
-int STEERING_PIN = D1;    //Arduino 9 or GPIO5
-int ACCELERATOR_PIN = D2; //Aduino 8 or GPIO4
+/**
+A-	1	5 or D1
+A+	3	0 or D3
+B-	2	4 or D2
+B+	4	2 or D4
+*/
+int STEERING_PIN = D2;    //Arduino 9 or GPIO5
+int ACCELERATOR_PIN = D3; //Aduino 8 or GPIO4
 
 int STEERING_MID = 1500;
 int ACCELERATOR_MID = 1500;
@@ -36,6 +42,8 @@ void setup()
     delay(10);
     // prepare GPIO2
     pinMode(LED_BUILTIN, OUTPUT);
+    pinMode(D1, OUTPUT);
+    analogWrite(D1, 1023);
     digitalWrite(LED_BUILTIN, 0); //Switch led off
 
     wheelServo.attach(STEERING_PIN);

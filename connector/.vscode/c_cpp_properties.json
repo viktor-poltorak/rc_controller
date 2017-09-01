@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/home/viktor/.arduino15/packages/esp8266/hardware/esp8266/2.3.0/cores/esp8266",
+                "${workspaceRoot}"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": false,
+                "path": [
+                    "/home/viktor/.arduino15/packages/esp8266/hardware/esp8266/2.3.0/cores/esp8266",
+                    "/home/viktor/.arduino15/packages/esp8266/hardware/esp8266/2.3.0/libraries/ESP8266WiFi/src/",
+                    "/home/viktor/.arduino15/packages/esp8266/hardware/esp8266/2.3.0/libraries/Servo/src/",
+                    "${workspaceRoot}"
+                ]
+            },
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 2
+}
