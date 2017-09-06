@@ -234,6 +234,10 @@ void processSubCommand(String subCommand, String value)
     {
         setSteering(value.toInt());
     }
+    if (subCommand == "P") 
+    {
+        delay(value.toInt());
+    }
 }
 
 void brake()
